@@ -119,7 +119,7 @@ body {
     margin-right: -20px;
     opacity: 0;
     animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
-    animation-delay: 2s, 3s;
+    animation-delay: 0s, 1s;
 
 }
 
@@ -268,7 +268,7 @@ body {
     margin-right: -20px;
     opacity: 0;
     animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
-    animation-delay: 2s, 3s;
+    animation-delay: 0s, 1s;
 
 }
 
@@ -356,19 +356,19 @@ body {
    border: 3rem;
     border-radius:3rem;
     box-shadow: 0  0 1rem var(--bg-color);
-    overflow:hidden;
+    overflow:hidden; 
     display: flex;
 
 }.portfolio-box img{
     width: 100%;
-    transition: .5s ease;
+    /* transition: .5s ease; */
 
 }
-.portfolio-box:hover img{
+ .portfolio-box:hover img{
     transform: scale(1.1);
 
 
-}
+} 
 .portfolio-box .portfolio-layer{
     position: absolute;
     bottom: 0;
@@ -382,19 +382,19 @@ body {
     flex-direction: column;
     text-align: center;
     padding: 0 4rem;
-    transform: translateY(100%);
-    transition: .5s ease;
+    /* transform: translateY(100%); */
+    /* transition: .5s ease; */
 
 }
-.portfolio-box:hover .portfolio-layer{
+/* .portfolio-box:hover .portfolio-layer{
     transform: translateY(0); 
-}
+} */
 .portfolio-layer h4{
-    font-size:40px;
+    font-size:30px;
 
 
 }.portfolio-layer p{
-    font-size: 1.6rem;
+    font-size: 20px;
     margin: .3rem 0 1rem;
 
 
@@ -508,20 +508,20 @@ body {
 .footer{
     padding: 2rem 3%;
 }
-@media(max-width: 768px){
+@media(max-width: 780px){
     #menu-icon{
         display:block;
     }
     .navbar{
-        position: absolute;
+        /* position: absolute;
         top: 10%;
         left: 0;
         width: 100%;
         padding: 1rem 3%;
-        background:#423c3c;
+        /* background:#423c3c;
         border-top: .1rem solid #0ef;
-        box-shadow: 05rem  1rem rgba(red, green, blue, alpha);
-        /* display: none; */
+        box-shadow: 05rem  1rem rgba(red, green, blue, alpha);  */
+        display: none;
     }
     .navbar.active{
         display: block;
@@ -533,10 +533,11 @@ body {
     }
     .home {
         flex-direction: column;
+        font-size: 50%;
     }
-    /* .home-content h3 {
+    .home-content h3 {
         font-size: 2.6rem;
-    } */
+    }
     .home-content h1{
         font-size: 5rem;
 
@@ -582,9 +583,7 @@ body {
 
 }
 @media(max-width: 365px){
-    .home-img img{
-        width: 90vw;
-    }
+    
     .about-img img{
         width: 90vw;
     }
@@ -595,4 +594,16 @@ body {
         text-align: center;
         margin-top: 2rem;
     }
+}
+@media(max-width:775px){
+    .home-img img{
+    width: 200px;
+    }
+
+}
+@media(max-width:565px){
+    .home-img img{
+    width: 120px;
+    }
+
 }
