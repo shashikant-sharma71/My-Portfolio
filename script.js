@@ -1,5 +1,5 @@
 var typed = new Typed(".multiple-text", {
-    strings: ["Frontend Developer", "Web Developer", "Python Programmer"],
+    strings: ["Web Developer", "Python Developer"],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
@@ -7,17 +7,7 @@ var typed = new Typed(".multiple-text", {
 })
 
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
           /*===================toggle icon navbar===================*/
             let menuIcon = document.querySelector('#menu-icon');
             let navbar = document.querySelector('.navbar');
