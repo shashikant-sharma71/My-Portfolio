@@ -1,64 +1,99 @@
-
-
-
+       
 * {
-    margin: 2px;
-    padding: 2px;
+    margin: 1px;
+    padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
 
+html{
+    font-size: 100%;
+    overflow-x: hidden;
+}
+
 body {
-    background: #1f242d;
+   
+     background: black; 
     color: #fff;
 
-}
+}  
+
+
+ /* Header Contents  */
 
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
-    background: transparent;
+    padding: 10px 3%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+  
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 5;
 }
-.header.sticky{
-    border-bottom: .1rem solid rgba(red, green, blue, alpha);
-}
+
+ /* Logo in upper-left corner  */
 
 .logo {
-    font-size: 25px;
+    font-size: 2rem;
     color: #fff;
     text-decoration: none;
-    font-weight: 600;
-    cursor: default;
-    opacity: 0;
-    animation: slideRight 1s ease forwards;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
+.logo:hover{
+    transform: scale(1.1);
+}
+.logo span{
+    text-shadow: 0 0 25px aqua;
+}
+    
 
-.navbar a {
-    display: inline-block;
-    font-size: 18px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500px;
-    margin-left: 35px;
-    transition: .3s;
-    opacity: 0;
-    animation: slideTop .4s ease forwards;
-    animation-delay: calc(.2s * var(--i));
+/* Navbar Like  Home, About ,Skils, Portfolio, Contact */
 
+
+.navbar a{
+    margin-left:0.5rem;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    transition: 0.3 ease;
+    border-bottom: 2px solid transparent;
+   
 
 }
-
 .navbar a:hover,
 .navbar a.active {
-    color: #0ef;
+    color: aqua;
+    border-bottom: 2px solid aqua ;
+    
 }
+
+
+  /* menu Icon  */
+#menu-icon{
+    font-size: 2.6rem;
+    color:#0ef
+
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 12% 10rem;
+
+}
+
+
+/* Home Content  */
 
 .home {
     position: relative;
@@ -75,8 +110,12 @@ body {
     max-width: 600px;
 }
 
+
+
+ /* Greeting and Profession  */
+
 .home-content h3 {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700px;
     opacity: 0;
     animation: slideBottom 1s ease forwards;
@@ -96,33 +135,41 @@ body {
     color: #0ef;
 }
 
+ /* My Name  "Shashikant Sharma " */
+
 .home-content h1 {
-    font-size: 56px;
+    font-size: 50px;
     font-weight: 700px;
-    margin: -3px 0;
+
     opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: 1s;
 
 }
+ /* Paragraph about me on Home page  */
 
 .home-content p {
-    font-size: 16px;
+    font-size: 13px;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
 }
 
+/* My Image on Home Page  */
 .home-img img {
-    max-width: 300px;
-    box-shadow: 0 0 20px #0ef;
-    margin-right: -20px;
+    width:350px;
+    box-shadow: 0 0 100px rgb(0, 255, 200);
+    border:2px ;
+    background: linear-gradient(to right, red, blue, purple, red);
+    border-radius: 50%;
+    margin-right: -19px;
     opacity: 0;
     animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
     animation-delay: 0s, 1s;
 
 }
 
+ /* Social Media Icons And Link  */
 
 .social-media a {
     display: inline-flex;
@@ -139,8 +186,8 @@ body {
     margin: 30px 15px 30px 0;
     transition: 1s ease;
     opacity: 0;
-    animation: slideLeft 1s ease forwards;
-    animation-delay: calc(.2s *var(--i));
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
 
 }
 
@@ -150,29 +197,71 @@ body {
     box-shadow: 0 0 20px #0ef;
 
 }
-
 .btn {
-    display: inline-block;
-    padding: 12px 28px;
-    background: #0ef;
-    border-radius: 40px;
-    box-shadow: 0 0 10px #0ef;
-    font-size: 16px;
-    color: #1f242d;
-    letter-spacing: 1px;
-    font-weight: 600;
-    transition: .5s ease;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.747);
+    color: black;
+    box-shadow:0 0 0px #0ef; 
+    
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    margin-right: 20px;
+    
+    cursor: pointer;
+    outline: none;
+    z-index: -1;
     opacity: 0;
-    animation: slideTop 1s ease forwards;
-    animation-delay: 2s;
-
-
-}
-
-.btn:hover {
-    box-shadow: none;
+    animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+    animation-delay: 0s, 1s;
+    
 
 }
+
+.btn::before {
+    content: "";
+    position: absolute;
+    color: #080808;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 50px;  
+    box-shadow: 0 0 5px rgb(0, 68, 255), 0 0 7px rgb(235, 231, 3), 0 0 8px rgb(0, 255, 85);
+   
+    
+    z-index: -1;
+    animation: rotateBorder 5s linear infinite;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    border-radius: 50px;
+     
+    color: #141414;/* Inner white background */
+    z-index: 0;
+}
+
+@keyframes rotateBorder {
+    0% { background: linear-gradient(0deg, red, blue, purple); }
+    25% { background: linear-gradient(90deg, red, blue, purple); }
+    50% { background: linear-gradient(180deg, red, blue, purple); }
+    75% { background: linear-gradient(270deg, red, blue, purple); }
+    100% { background: linear-gradient(360deg, red, blue, purple); }
+}
+.Hire{
+    padding: 1px 2px;
+}
+
+
+
+
 
 /* KEYFRAMES ANIMATION*/
 @keyframes slideRight {
@@ -524,10 +613,10 @@ body {
         display: none;
     }
     .navbar.active{
-        display: block;
+        display:flexbox;
     }
     .navbar a{
-        display: block;
+        display: flexbox;
         font-size: 2rem;
         margin: 3rem 0;
     }
