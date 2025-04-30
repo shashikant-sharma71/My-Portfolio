@@ -17,7 +17,7 @@ html{
 
 body {
    
-     background: black; 
+     background: rgb(0, 0, 0); 
     color: #fff;
 
 }  
@@ -58,7 +58,7 @@ body {
 }
     
 
-/* Navbar Like  Home, About ,Skils, Portfolio, Contact */
+/* Navbar Like  Home, About ,Skils, projects, Contact */
 
 
 .navbar a{
@@ -82,7 +82,7 @@ body {
   /* menu Icon  */
 #menu-icon{
     font-size: 2.6rem;
-    color:#0ef
+    color:rgb(0, 0, 0)
 
 }
 
@@ -428,19 +428,19 @@ section{
     margin: 1rem 0 3rem ;
 
 }
-.portfolio {
+.projects {
     background: #000000;
     padding: 4rem 0; /* Added padding for better spacing */
 }
 
-.portfolio h2 {
+.projects h2 {
     margin-bottom: 4rem;
     text-align: center; /* Centered the heading */
     color: #ffffff; /* Changed text color for better contrast */
     font-size: 2.5rem; /* Increased font size */
 }
 
-.portfolio-container {
+.projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
     align-items: center;
@@ -448,7 +448,7 @@ section{
     padding: 0 2rem; /* Added padding for better spacing */
 }
 
-.portfolio-container .portfolio-box {
+.projects-container .projects-box {
     position: relative;
     border-radius: 1rem; /* Adjusted border radius */
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5); /* Softer shadow */
@@ -460,13 +460,13 @@ section{
     background: #2a3a4d; /* Background color for the card */
 }
 
-.portfolio-box:hover {
+.projects-box:hover {
     transform: scale(1.05); /* Slightly scale up on hover */
 }
 
 /* Half border effect using pseudo-elements */
-.portfolio-box::before,
-.portfolio-box::after {
+.projects-box::before,
+.projects-box::after {
     content: '';
     position: absolute;
     border: 3px solid transparent; /* Transparent border */
@@ -474,7 +474,7 @@ section{
     pointer-events: none; /* Prevent interaction */
 }
 
-.portfolio-box::before {
+.projects-box::before {
     top: -3px; /* Position above */
     left: -3px; /* Position to the left */
     right: -3px; /* Position to the right */
@@ -483,7 +483,7 @@ section{
     z-index: -1; /* Send behind the card */
 }
 
-.portfolio-box::after {
+.projects-box::after {
     top: 0; /* Position at the top */
     left: 0; /* Position at the left */
     right: 0; /* Position at the right */
@@ -491,17 +491,17 @@ section{
     border-color: rgba(0, 238, 255, 0.3); /* Lighter color for the inner border */
 }
 
-.portfolio-box img {
+.projects-box img {
     width: 100%;
     height: auto; /* Maintain aspect ratio */
     transition: transform 0.5s ease; /* Smooth transition for image scaling */
 }
 
-.portfolio-box:hover img {
+.projects-box:hover img {
     transform: scale(1.1); /* Scale image on hover */
 }
 
-.portfolio-box .portfolio-layer {
+.projects-box .projects-layer {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -518,23 +518,23 @@ section{
     transition: opacity 0.3s ease; /* Smooth transition for opacity */
 }
 
-.portfolio-box:hover .portfolio-layer {
+.projects-box:hover .projects-layer {
     opacity: 1; /* Show layer on hover */
 }
 
-.portfolio-layer h4 {
+.projects-layer h4 {
     font-size: 1.5rem; /* Adjusted font size */
     color: #ffffff; /* Changed text color */
     margin-bottom: 0.5rem; /* Spacing below heading */
 }
 
-.portfolio-layer p {
+.projects-layer p {
     font-size: 1rem; /* Adjusted font size */
     margin: 0.3rem 0 1rem;
     color: #ffffff; /* Changed text color */
 }
 
-.portfolio-layer a {
+.projects-layer a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -549,25 +549,25 @@ section{
 
 
 
-.contect h2{
+.contact h2{
     margin-bottom: 3rem;
 
 }
-.contect form {
+.contact form {
     max-width: 70rem;
     margin: 1rem auto;
     text-align: center;
     margin-bottom: 3rem;
 }
-.contect form .input-box{
+.contact form .input-box{
     display: flex;
     justify-content: space-between ;
     flex-wrap: warp;
 
 
 }
-.contect form .input-box input,
-.contect form textarea{
+.contact form .input-box input,
+.contact form textarea{
     width: 100%;
     padding: 1.5rem;
     font-size: 1.6rem;
@@ -577,10 +577,10 @@ section{
     border-radius: 2rem;
     margin: 0.7rem 0;
 }
-.contect form .input-box input{
+.contact form .input-box input{
     width: 49%;
 }
-.contect form textarea{
+.contact form textarea{
     resize: none;
 }
 .contact form .btn{
@@ -628,7 +628,7 @@ section{
     section {
         padding: 10rem 3% 2rem;
     }
-    .skills, .portfolio {
+    .skills, .projects {
         padding-bottom: 7rem;
     }
     .contact {
@@ -672,16 +672,16 @@ section{
         width: 70vw;
         margin-top: 4rem;
     }
-    .skills h2, .portfolio h2 {
+    .skills h2, .projects h2 {
         margin-bottom: 3rem;
     }
-    .portfolio-container {
+    .projects-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media(max-width: 617px) {
-    .portfolio-container {
+    .projects-container {
         grid-template-columns: 1fr;
     }
 }
@@ -733,6 +733,7 @@ section{
 #menu-icon {
     position: fixed;
     top: 10px;
+
     right: 15px;
     font-size: 30px;
     color: cyan;
@@ -740,27 +741,18 @@ section{
     z-index: 1000;
   }
   
-  /* Navbar hidden by default (mobile) */
-  /* Navbar container */
-.navbar {
+  /* Navbar container: horizontal, placed left of menu icon */
+  .navbar {
     position: fixed;
-    top: 60px;
-    right: 0;
-    background: rgb(0, 0, 0);
-    padding: 10px 15px;       /* Reduced padding */
+    top: 12px;
+    right: 60px;               /* Moves navbar left of the menu icon */
+    background: transparent;
+    padding: 5px 10px;
     display: none;
-    flex-direction: column;
-    gap: 8px;                 /* Reduced gap between items */
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;                  /* Controls space between links */
     z-index: 999;
-  }
-  
-  /* Navigation links */
-  .navbar a {
-    color: white;
-    font-size: 16px;          /* Slightly smaller font */
-    text-decoration: none;
-    font-weight: 600;
-    padding: 1px 0;           /* Tighter vertical space */
   }
   
   /* Show navbar when active */
@@ -768,7 +760,13 @@ section{
     display: flex;
   }
   
-  /* Links style */
+  /* Navigation links */
+  .navbar a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+  }
   
   /* Active link style */
   .navbar a.active {

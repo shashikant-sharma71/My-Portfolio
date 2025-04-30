@@ -8,14 +8,20 @@ var typed = new Typed(".multiple-text", {
 
         
 
-          /*===================toggle icon navbar===================*/
-            let menuIcon = document.querySelector('#menu-icon');
-            let navbar = document.querySelector('.navbar');
+const menuIcon = document.getElementById("menu-icon");
+const navbar = document.getElementById("navbar");
 
-            menuIcon.onclick=()=>{
-                menuIcon.classList.toggle(' bx bx-x');
-                navbar.classList.toggle('active');
-            };
+menuIcon?.addEventListener("click", () => {
+    // Toggle navbar visibility
+    navbar?.classList.toggle("active");
+
+    // Toggle between hamburger and close icons
+    if (menuIcon.classList.contains("bx-menu")) {
+        menuIcon.classList.replace("bx-menu", "bx-x");
+    } else {
+        menuIcon.classList.replace("bx-x", "bx-menu");
+    }
+});
 
 
 
@@ -62,5 +68,7 @@ window.onscroll = () => {
 
  });
  ScrollReveal().reveal('.home-content,heading', { origin:'top'});
+
+
 
            
