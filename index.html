@@ -13,19 +13,22 @@
 
 <body>
     <header class="header">
-        <a href="#" class="logo"> WELL<span> COME </span></a>
+        <a href="#home" class="logo"> WELL<span> COME </span></a>
 
-        <i class='bx bx-menu' id="menu-icon" ></i>
+      <!-- Menu Icon -->
+<i class='bx bx-menu' id="menu-icon"></i>
+
+<!-- Navigation Menu -->
+<nav class="navbar" id="navbar">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+</nav>
 <!--         <a href="My Resume.pdf" class="btn" id="Hire">Hire me <i class='bx bx-link-external'></i> </a> -->
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about" >About</a>
-            <a href="#skills" >Skils</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contect">Contact</a>
-
-        </nav>
+        
     </header>
 
                       <!-- Home page Design -->
@@ -209,7 +212,18 @@
 </footer>
 
 
-
+<script>
+    const menuIcon = document.getElementById("menu-icon");
+    const navbar = document.getElementById("navbar");
+    let menuOpen = false;
+  
+    menuIcon.addEventListener("click", () => {
+      menuOpen = !menuOpen;
+      navbar.classList.toggle("active");
+      menuIcon.classList.toggle("bx-menu");
+      menuIcon.classList.toggle("bx-x");
+    });
+  </script>
 <!-- scroll reval -->
 <script src="https://unpkg.com/scrollreveal"></script>
 
