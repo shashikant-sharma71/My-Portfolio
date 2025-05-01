@@ -210,8 +210,8 @@ section{
     margin-right: 20px;
     cursor: pointer;
     outline: none;
-    z-index: 1; /* Fix here */
-    opacity: 1; /* Fix here */
+    z-index: 1; 
+    opacity: 1; 
     
 }
 .resume a{
