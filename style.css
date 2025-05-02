@@ -1,4 +1,4 @@
-       
+/*---------------------------------------- Body ------------------------------------------*/ 
 * {
     margin: 1px;
     padding: 0;
@@ -23,7 +23,8 @@ body {
 }  
 
 
- /* Header Contents  */
+
+ /* -----------------------------------------Header Contents -------------------------------------------- */
 
 .header {
     position: fixed;
@@ -33,14 +34,15 @@ body {
     padding: 10px 3%;
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
-  
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 5;
 }
 
- /* Logo in upper-left corner  */
+
+
+ /* ------------------------------------------Logo in upper-left corner  ----------------------------------------------------*/
 
 .logo {
     font-size: 2rem;
@@ -58,8 +60,7 @@ body {
 }
     
 
-/* Navbar Like  Home, About ,Skils, projects, Contact */
-
+/*-------------------------------------- Navbar Like  Home, About ,Skils, projects, Contact----------------------------------- */
 
 .navbar a{
     margin-left:0.5rem;
@@ -79,7 +80,8 @@ body {
 }
 
 
-  /* menu Icon  */
+
+/*--------------------------------------- menu Icon ------------------------------------------ */
 #menu-icon{
     font-size: 2.6rem;
     color:rgb(0, 0, 0)
@@ -87,13 +89,13 @@ body {
 }
 
 section{
-    min-height: 100vh;
-    padding: 10rem 12% 10rem;
+    padding: 1rem 10% 2rem;
 
 }
 
 
-/* Home Content  */
+
+/*---------------------------Home-Page---------------------Greeting and Profession---------------------------  */
 
 .home {
     position: relative;
@@ -110,9 +112,6 @@ section{
     max-width: 600px;
 }
 
-
-
-                      /* Greeting and Profession  */
 
 .home-content h3 {
     font-size: 28px;
@@ -135,7 +134,7 @@ section{
     color: #0ef;
 }
 
-                                            /* My Name  "Shashikant Sharma " */
+/* My Name  "Shashikant Sharma " */
 
 .home-content h1 {
     font-size: 50px;
@@ -146,7 +145,7 @@ section{
     animation-delay: 1s;
 
 }
-                                      /* Paragraph about me on Home page  */
+/* Paragraph about me on Home page  */
 
 .home-content p {
     font-size: 13px;
@@ -155,7 +154,7 @@ section{
     animation-delay: 1s;
 }
 
-                                                 /* My Image on Home Page  */
+/* My Image on Home Page  */
 .home-img img {
     width:350px;
     box-shadow: 0 0 100px rgb(0, 255, 200);
@@ -169,7 +168,9 @@ section{
 
 }
 
-                                        /* Social Media Icons And Link  */
+
+
+/*-------------------------------------------------- Social Media Icons ----------------------------------------------------- */
 
 .social-media a {
     display: inline-flex;
@@ -226,98 +227,14 @@ section{
     margin-right: 20px;
     cursor: pointer;
     outline: none;
-    z-index: 1; /* Fix here */
-    opacity: 1; /* Fix here */
+    z-index: 1; 
+    opacity: 1; 
 }
 
 
 
+ /*----------------------------------------------- About Section----------------------------------------------- */
 
-
-
-
-/* KEYFRAMES ANIMATION*/
-@keyframes slideRight {
-    0% {
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideLeft {
-    0% {
-        transform: translateX(100px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideTop {
-    0% {
-        transform: translateY(100px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideBottom {
-    0% {
-        transform: translateY(-100px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes zoomIn {
-    0% {
-        transform: scale(0);
-        opacity: 0;
-    }
-
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-@keyframes floatImage {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-24px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-
-}
-
-
-
-
-
-
-                                     /* About Section */
 .about {
     display: flex;
     flex-wrap: wrap;
@@ -381,10 +298,7 @@ section{
 
 
 
-
-                                 /* Skills Section  */
-
-
+/* ------------------------------------------Skills Section-------------------------------------------  */
 
 .skills {
     padding: 1px 3%;
@@ -440,7 +354,8 @@ section{
 
 
 
-                                  /* Project_Section  */
+
+/*--------------------------------------------Project_Section ----------------------------------------------------- */
 
 .projects {
     background: #000000;
@@ -550,7 +465,9 @@ section{
 
 }
 
-                                         /* Certificate Section  */
+
+
+/* ------------------------------------------------Certificate Section-----------------------------------------------  */
 
 .certificate {
     padding: 4rem 2rem;
@@ -613,7 +530,7 @@ section{
 
 .certificate-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Force 2 columns */
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     padding: 0 1rem;
     max-width: 1200px;
@@ -624,10 +541,7 @@ section{
 
 
 
-
-                                          /* Contact Section  */
-
-
+/* ---------------------------------------------Contact Section----------------------------------------------- */
 
 .contact h2 {
     margin-bottom: 3rem;
@@ -678,46 +592,65 @@ section{
 
 .contact form textarea {
     resize: none;
-    min-height: 150px;
+    height: 100px;
     margin-top: 1rem;
 }
 
-.contact form .btn {
-    display: inline-block;
-    font-size: 1.6rem;
+.send-btn {
+   margin-left: 24rem;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
     font-weight: bold;
-    justify-content: center;
-    align-items: center;
-    color: #000;
-    background: #0ef;
-    border-radius: 50px;
+    cursor: pointer;
     border: none;
-    margin-top: 2rem;
     transition: 0.3s ease;
-    box-shadow: 0 0 10px #0ef;
     
 }
 
-.contact form .btn:hover {
-    background: #00bfff;
+.send-btn:hover {
+    
     color: rgb(0, 255, 170);
-    box-shadow: 0 0 15px #ff0000, 0 0 25px #00ff0d;
+    box-shadow: 0 0 10x #ff0000, 0 0 15px #00ff0d;
+}
+
+.social-media1{
+    margin-left: 22rem;
+ 
+}
+.social-media1 a {
+    display: inline-flex;
+    justify-content:center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(15, 219, 233);
+    text-decoration:dashed;
+    margin: 30px 15px 30px 0;
+    transition: 1s ease;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+
+}
+
+.social-media1 a:hover {
+    background: rgb(0, 255, 26);
+    color: #1f242d;
+    box-shadow: 0 0 20px #0ef;
+
 }
 
 
 
-
-
-
-
-
-
-
-
-
-                                             /* Footer Section */
-
-
+/* ---------------------------------------Footer Section----------------------------------------------- */
 
 .footer{
     display: flex;
@@ -730,7 +663,7 @@ section{
 
 }
 .footer-text p{
-    font-size: 1.6rem;
+    font-size: 1rem;
 
 
 }.footer-iconTop a{
@@ -746,14 +679,94 @@ section{
     color:rgb(0, 0, 0)
 }
 
-/* Breakpoints */
+
+
+
+/* ----------------------------------KEYFRAMES ANIMATION----------------------------------------------------*/
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-24px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+
+/*------------------------------ Breakpoints ---------------------RESPONSIVE-------------------------------------------*/
+
 @media(max-width: 1200px) {
     html {
         font-size: 55%;
     }
-}
-
-@media(max-width: 991px) {
     .header {
         padding: 2rem 3%;
     }
@@ -766,71 +779,36 @@ section{
     .contact {
         min-height: auto;
     }
-}
-
-@media(max-width: 780px) {
-    #menu-icon {
-        display: block;
-    }
-    .navbar {
-        display: none;
-    }
-    .navbar.active {
-        display: flex; 
-    }
-    .navbar a {
-        display: flex; 
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
-    .home {
-        flex-direction: column;
-        font-size: 50%;
-    }
-    .home-content h3 {
-        font-size: 2.6rem;
-    }
-    .home-content h1 {
-        font-size: 5rem;
-    }
-    .home-img img {
-        width: 80vw;
-        margin-top: 4rem;
-    }
     .about {
-        flex-direction: column-reverse;
-    }
-    .about img {
-        width: 70vw;
-        margin-top: 4rem;
-    }
-    .skills h2, .projects h2 {
-        margin-bottom: 3rem;
-    }
-    .projects-container {
-        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+        text-align: center;
     }
 }
 
-@media(max-width: 617px) {
-    .projects-container {
+
+/* Responsive */
+@media (max-width: 768px) {
+    
+
+    .contact form .input-box {
+        flex-direction: column;
+    }
+
+    .contact form .input-box input {
+        width: 100%;
+    }
+    .certificate-container {
         grid-template-columns: 1fr;
     }
-}
-
-
-
-@media(max-width: 775px) {
-    .home-img img {
-        width: 200px;
+    .certificate-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 2rem;
+        padding: 0 1rem;
+        max-width: 1200px;
+        margin: 0 auto;
     }
-}
-
-@media(max-width: 565px) {
-    .home-img img {
-        width: 180px;
-    }
-#menu-icon {
+    #menu-icon {
     position: fixed;
     top: 10px;
 
@@ -843,13 +821,13 @@ section{
   .navbar {
     position: fixed;
     top: 12px;
-    right: 60px;               
+    right: 6px;               
     background: transparent;
-    padding: 5px 10px;
+    
     display: none;
     flex-direction: row;
     align-items: center;
-    gap: 10px;                  
+    gap: 8px;                  
     z-index: 999;
   }
   
@@ -872,42 +850,112 @@ section{
       grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
       
   }
-}
-
-@media (max-width: 768px) {
-    .certificate-container {
-        grid-template-columns: 1fr;
+  
+    .skills-box .btn {
+        display: inline-block;
+        font-size: 8px;
+        padding: 5px 4px;
+        margin-top: 1px;
+        margin-left: 1rem;
+        background: transparent;
+        color: rgb(0, 247, 255);
+       
+       
+      
     }
-    .certificate-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 2rem;
-        padding: 0 1rem;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-}
 
-@media (max-width: 768px) {
-    .contact form .input-box {
+
+   
+    .navbar {
+        display: none;
+    }
+    .navbar.active {
+        display: flex; 
+    }
+    .navbar a {
+        display: flex; 
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    .home {
         flex-direction: column;
+        font-size: 50%;
     }
-
-    .contact form .input-box input {
-        width: 100%;
+    .home-content h3 {
+        font-size: 2.6rem;
     }
-}
-
-
-/* Responsive */
-@media (max-width: 768px) {
+    .home-content h1 {
+        font-size: 5rem;
+    }
+    .home-img img {
+        width: 50vw;
+        margin-top: 4rem;
+    }
     .about {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column-reverse;
+    }
+    .about img {
+        width: 0vw;
+        
+    }
+    .skills h2, .projects h2 {
+        margin-bottom: 3rem;
     }
 
-    .about-img img {
-        width: 250px;
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .send-btn {
+        margin-left: 17rem;
+        margin-top: 1rem;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        background-color: white;
+        color: black;
+        border-radius: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+        transition: 0.3s ease;
+     
+    }
+    
+    .send-btn:hover {
+        
+        color: rgb(0, 255, 170);
+        box-shadow: 0 0 10x #ff0000, 0 0 15px #00ff0d;
+    }
+    
+    .social-media1{
+        margin-left:8rem;
+    
+    }
+    .social-media1 a {
+        display: inline-flex;
+        justify-content:center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: 2px solid #0ef;
+        border-radius: 50%;
+        font-size: 20px;
+        color: rgb(15, 219, 233);
+        text-decoration:dashed;
+        margin: 30px 15px 30px 0;
+        transition: 1s ease;
+        opacity: 0;
+        animation: slideBottom 1s ease forwards;
+        animation-delay: .7s;
+    
+    }
+    
+    .social-media1 a:hover {
+        background: rgb(0, 255, 26);
+        color: #1f242d;
+        box-shadow: 0 0 20px #0ef;
+    
     }
 }
 
