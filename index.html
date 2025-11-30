@@ -6,6 +6,8 @@
     <title>Shashikant Sharma - Web Developer, Programmer</title>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+   
 </head>
 
 <body>
@@ -32,7 +34,7 @@
             <br>
             <br>
             <br>
-            <br>
+         
             
            
             <h3>Welcome to My Portfolio!</h3>
@@ -43,6 +45,7 @@
             <div class="social-media">
                 <a href="https://www.facebook.com/" target="_blank" style="--i:7;"><i class='bx bxl-facebook'></i></a>
                 <a href="https://www.instagram.com/shashikantkumar3605?igsh=YzljYTk1ODg3Zg==" target="_blank" style="--i:9;"><i class='bx bxl-instagram'></i></a>
+                <a href="https://wa.me/+916209370714" target="_blank" style="--i:10;"><i class='bx bxl-whatsapp'></i></a>
                 <a href="https://github.com/shashikant-sharma71" target="_blank" style="--i:8;"><i class='bx bxl-github'></i></a>
                 <a href="https://www.linkedin.com/in/shashikant-sharma71/" target="_blank" style="--i:10;"><i class='bx bxl-linkedin'></i></a>
             </div>
@@ -54,7 +57,7 @@
             
         </div>
         <div class="home-img">
-            <img src="me.jpeg" alt="My image">
+            <img src="me2.jpeg" alt="My image">
         </div>
 
     <div class="container">
@@ -87,7 +90,7 @@
   
 <section class="about" id="about">
     <div class="about-img">
-        <img src="me.jpeg" alt="Shashikant Sharma">
+        <img src="Mee1.jpeg" alt="Shashikant Sharma">
     </div>
 
     <div class="about-content">
@@ -323,28 +326,32 @@
 
     <!------------------------------------------------------------------ Contact Section ------------------------------------------------------>
    
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
-        <form action="#">
-            <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
-            </div>
-            <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
-            </div>
-            <textarea cols="30" rows="10" placeholder="Your Message"></textarea>
-            
+   <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
 
-        </form>
+    <form id="contactForm">
+        <div class="input-box">
+            <input type="text" id="fullname" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+        </div>
+
+        <div class="input-box">
+            <input type="number" id="mobile" placeholder="Mobile Number" required>
+            <input type="text" id="subject" placeholder="Email Subject" required>
+        </div>
+
+        <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+
         <input type="submit" value="Send Message" class="send-btn">
+    </form>
+        
 
         <div class="social-media1">
             <a href="https://www.facebook.com/" target="_blank" style="--i:7;"><i class='bx bxl-facebook'></i></a>
             <a href="https://www.instagram.com/shashikantkumar3605?igsh=YzljYTk1ODg3Zg==" target="_blank" style="--i:9;"><i class='bx bxl-instagram'></i></a>
             <a href="https://github.com/shashikant-sharma71" target="_blank" style="--i:8;"><i class='bx bxl-github'></i></a>
             <a href="https://www.linkedin.com/in/shashikant-sharma71/" target="_blank" style="--i:10;"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://wa.me/+916209370714" target="_blank" style="--i:10;"><i class='bx bxl-whatsapp'></i></a>
         </div>
         
     </section>
@@ -367,7 +374,25 @@
     <!------------------------------------------------------------- Scripts ---------------------------------------------------------------->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+
+    <!-- EmailJS library -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<!-- Option A: keep a short inline init here (optional) -->
+<script>emailjs.init("5lQ94D5TvQZn6KHn7");</script>
+
+<!-- Your fixed script.js last -->
+<script src="script.js"></script>
+
+
+
+
+
+
+
     <script src="script.js"></script>
+ 
 
   
     
