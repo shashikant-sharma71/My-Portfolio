@@ -542,6 +542,7 @@ section{
 
 
 /* ---------------------------------------------Contact Section----------------------------------------------- */
+/* ---------------------------------------------Contact Section----------------------------------------------- */
 
 .contact h2 {
     margin-bottom: 3rem;
@@ -597,7 +598,7 @@ section{
 }
 
 .send-btn {
-   margin-left: 24rem;
+   margin-left: 33rem;
     margin-top: 1rem;
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
@@ -617,11 +618,12 @@ section{
     box-shadow: 0 0 10x #ff0000, 0 0 15px #00ff0d;
 }
 
-.social-media1{
-    margin-left: 22rem;
- 
+.social-media {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-.social-media1 a {
+.social-media a {
     display: inline-flex;
     justify-content:center;
     align-items: center;
@@ -641,14 +643,12 @@ section{
 
 }
 
-.social-media1 a:hover {
+.social-media a:hover {
     background: rgb(0, 255, 26);
     color: #1f242d;
     box-shadow: 0 0 20px #0ef;
 
 }
-
-
 
 /* ---------------------------------------Footer Section----------------------------------------------- */
 
